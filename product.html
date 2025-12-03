@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tan-songbird" rel="stylesheet">
+</head>
+
+<body>
+    <main class="product-detail">
+        <div class="container">
+            <h1 id="product-name"></h1>
+            <div class="product-image-wrapper">
+                <img id="product-image" alt="Imagen del producto">
+            </div>
+            <div class="product-info">
+                <h3>Ingredientes</h3>
+                <ul id="product-ingredients"></ul>
+
+                <h3>Receta</h3>
+                <p id="product-recipe"></p>
+
+                <div class="product-buttons">
+                    <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram">Ver más en
+                        Instagram</a>
+                    <a href="index.html" class="btn-back">← Volver</a>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+        if (product) {
+            document.getElementById("product-name").textContent = product.name;
+            document.getElementById("product-image").src = product.image;
+            document.getElementById("product-image").alt = product.name;
+
+            const ingredientsList = document.getElementById("product-ingredients");
+            product.ingredients.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                ingredientsList.appendChild(li);
+            });
+
+            document.getElementById("product-recipe").textContent = product.recipe;
+            document.getElementById("product-link").href = product.link;
+        } else {
+            document.body.innerHTML = "<p style='text-align:center;'>No se encontró el producto.</p>";
+        }
+    </script>
+</body>
+
+</html>

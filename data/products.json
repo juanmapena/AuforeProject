@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "name": "Paris Brest de Pistacho",
+    "shortDescription": "Mantecoso, dorado y hojaldrado.",
+    "image": "assets/images/paris-brest-mejorado.jpg",
+    "ingredients": [
+      "Harina 0000",
+      "Manteca francesa",
+      "Levadura fresca",
+      "Leche",
+      "Sal",
+      "Azúcar"
+    ],
+    "recipe": "Comenzamos activando la levadura con leche tibia. Se realiza un amasado suave con la harina y el resto de ingredientes. El secreto está en el laminado con manteca para obtener las clásicas capas. Se hornea hasta dorar."
+  },
+  {
+    "id": 2,
+  "name": "Sanguche de Miga",
+  "shortDescription": "Clásico, suave y relleno generoso.",
+  "image": "assets/images/sanguche.jpg",
+  "ingredients": [
+    "Pan de miga artesanal",
+    "Jamón cocido natural",
+    "Queso tipo barra",
+    "Manteca"
+  ],
+  "recipe": "Se prepara con pan de miga fresco y suave. Se unta ligeramente con manteca y mayonesa, se coloca el jamón y queso en capas finas, y se arma en capas dobles o triples. Ideal para eventos o picadas."
+  },
+  {
+    "id": 3,
+    "name": "Medialunas",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/medialunas.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  },
+   {
+    "id": 4,
+    "name": "Tarta de Ricota",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/tarta.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  },
+  {
+    "id": 4,
+    "name": "Tarta de Ricota",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/tarta.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  },
+  {
+    "id": 4,
+    "name": "Tarta de Ricota",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/tarta.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  },
+  {
+    "id": 4,
+    "name": "Tarta de Ricota",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/tarta.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  },
+  {
+    "id": 4,
+    "name": "Tarta de Ricota",
+    "shortDescription": "Suave, esponjoso y ligeramente dulce.",
+    "image": "assets/images/tarta.jpg",
+    "ingredients": [
+      "Harina de fuerza",
+      "Huevos",
+      "Azúcar",
+      "Manteca",
+      "Leche",
+      "Levadura"
+    ],
+    "recipe": "Una masa enriquecida con huevos y manteca. Se amasa hasta lograr una textura suave. Luego de fermentar, se moldea y hornea hasta alcanzar un color dorado. Perfecto para el desayuno."
+  }
+]
