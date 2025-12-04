@@ -5,9 +5,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Tan Songbird';
+  src: url('../assets/images/TANSONGBIRD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fef5e9;
+  background-color: #FFE9C6;
   color: #5e2c1c;
   line-height: 1.6;
 }
@@ -24,8 +31,14 @@ img {
   margin: 0 auto;
 }
 
+footer .location {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #a64b2a;
+}
+
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Tan Songbird', serif;
   font-weight: bold;
 }
 
@@ -36,7 +49,7 @@ h2 {
 
 /* HEADER */
 header {
-  background-color: #fff9f0;
+  background-color: #F96635;
   padding: 1rem 0;
   border-bottom: 1px solid #e2d6c5;
 }
@@ -60,7 +73,7 @@ header {
 
 .nav-list a {
   text-decoration: none;
-  color: #5e2c1c;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -72,6 +85,16 @@ header {
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+.language-switcher select {
+padding: 0.3rem 0.5rem;
+border-radius: 6px;
+border: 1px solid #ccc;
+font-size: 0.9rem;
+background-color: #fff0e2;
+color: #5e2c1c;
+cursor: pointer;
 }
 
 /* SOBRE EL COCINERO */
@@ -157,6 +180,13 @@ header {
   font-size: 0.9rem;
 }
 
+
+.timeline-step p{
+
+  padding-top: 1em;
+
+}
+
 .description-project {
   margin-top: 2rem;
   max-width: 700px;
@@ -214,9 +244,11 @@ header {
 }
 
 .product-card img {
-  height: 200px;
-  object-fit: cover;
   width: 100%;
+  height: 200px; /* o el alto que prefieras */
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .product-card .info {
@@ -226,6 +258,8 @@ header {
 .product-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .product-card p {
@@ -240,6 +274,15 @@ header {
   margin: 0 auto;
   text-align: left;
 }
+
+.product-detail h1 {
+  font-family: 'Tan Songbird', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; /* AUMENTA LA SEPARACIÓN CON LA IMAGEN */
+}
+
+
 
 .product-detail h2 {
   text-align: center;
@@ -309,6 +352,20 @@ header {
   color: #fff5f0;
   border: none;
 }
+
+.btn-instagram-header{
+   padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  background-color: #fff5f0;
+  color: #a64b2a;
+  border: 2px solid #a64b2a;
+}
+
+
 
 .btn-instagram:hover {
   background-color: #d85c24;

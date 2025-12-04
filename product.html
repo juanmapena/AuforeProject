@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tan-songbird" rel="stylesheet">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -21,11 +24,11 @@
                 <h3>Ingredientes</h3>
                 <ul id="product-ingredients"></ul>
 
-                <h3>Receta</h3>
+                <h3>Descripción</h3>
                 <p id="product-recipe"></p>
 
                 <div class="product-buttons">
-                    <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram">Ver más en
+                    <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram instagram">Ver más en
                         Instagram</a>
                     <a href="index.html" class="btn-back">← Volver</a>
                 </div>
@@ -35,27 +38,30 @@
         </div>
     </main>
 
-    <script>
-        const product = JSON.parse(localStorage.getItem("selectedProduct"));
+ <script>
+  const product = JSON.parse(localStorage.getItem("selectedProduct"));
+  const currentLang = localStorage.getItem("selectedLanguage") || "es";
 
-        if (product) {
-            document.getElementById("product-name").textContent = product.name;
-            document.getElementById("product-image").src = product.image;
-            document.getElementById("product-image").alt = product.name;
+  if (product && product.translations && product.translations[currentLang]) {
+    const t = product.translations[currentLang];
 
-            const ingredientsList = document.getElementById("product-ingredients");
-            product.ingredients.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = item;
-                ingredientsList.appendChild(li);
-            });
+    document.getElementById("product-name").textContent = t.name;
+    document.getElementById("product-image").src = product.image;
+    document.getElementById("product-image").alt = t.name;
 
-            document.getElementById("product-recipe").textContent = product.recipe;
-            document.getElementById("product-link").href = product.link;
-        } else {
-            document.body.innerHTML = "<p style='text-align:center;'>No se encontró el producto.</p>";
-        }
-    </script>
+    const ingredientsList = document.getElementById("product-ingredients");
+    ingredientsList.innerHTML = ''; // Limpiar por si acaso
+    t.ingredients.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ingredientsList.appendChild(li);
+    });
+
+    document.getElementById("product-recipe").textContent = t.recipe;
+  } else {
+    document.body.innerHTML = "<p style='text-align:center;'>No se encontró el producto.</p>";
+  }
+</script>
 </body>
 
 </html>

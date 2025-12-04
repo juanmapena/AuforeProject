@@ -20,12 +20,19 @@
       <img src="./assets/images/logo.png" alt="Logo Au Four Enchanté" class="logo">
       <nav>
         <ul class="nav-list">
-          <li><a href="#about">Sobre el cocinero</a></li>
-          <li><a href="#project">El Proyecto</a></li>
-          <li><a href="#products">Productos</a></li>
+          <li><a href="#about" data-i18n="nav.about">Sobre mi</a></li>
+          <li><a href="#project" data-i18n="nav.project">El Proyecto</a></li>
+          <li><a href="#products" data-i18n="nav.products">Productos</a></li>
         </ul>
       </nav>
-      <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram">Instagram</a>
+      <div class="language-switcher">
+        <select onchange="changeLanguage(this.value)">
+  <option value="es">Español</option>
+  <option value="en">English</option>
+  <option value="fr">Français</option>
+</select>
+      </div>
+      <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram-header">Instagram</a>
     </div>
   </header>
 
@@ -33,16 +40,12 @@
     <section id="about" class="about">
       <div class="container about-flex">
         <div class="about-text">
-          <h2>Sobre el cocinero</h2>
-          <p><strong>Hola! Soy Nicolás</strong>, argentino y cocinero profesional por vocación. Estudiar en Francia me
-            enseñó que la
-            gastronomía es mucho más que técnica: es historia, cultura y, sobre todo, pasión.</p>
-          <p>Hoy quiero reconectar con mis orígenes y compartir lo que más disfruto desde un nuevo lugar — trayendo el
-            aroma, la textura y el sabor de una panadería artesanal donde cada producto cuenta una historia.</p>
-          <p>Desde las clásicas medialunas hasta brioches, panes rellenos, viennoiseries y mucho más, todo está hecho
-            con tiempo, dedicación y amor por el detalle.</p>
-          <p><em>Un sabor auténtico, recién horneado. Un viaje de sabores en cada bocado.</em></p>
-          <p class="signature">~ Au Four Enchanté ~</p>
+          <h2 data-i18n="about.title">Sobre mi</h2>
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <p data-i18n="about.p3"></p>
+          <p data-i18n="about.p4"></p>
+          <p class="signature"> Au Four Enchanté </p>
         </div>
         <div class="about-image">
           <img src="./assets/images/cocinando.jpg" alt="Nicolás el cocinero">
@@ -53,64 +56,42 @@
     <section id="project" class="project">
       <div class="container">
         <div class="project-header-wrapper">
-          <h2>El Proyecto</h2>
-
-
+          <h2 data-i18n="project.title">El Proyecto</h2>
           <div class="timeline">
             <div class="timeline-step">
               <div class="circle">1</div>
-              <h4>Inicio del Proyecto</h4>
-              <p>Una idea nacida del amor por el pan y la cultura francesa.</p>
+              <h4 data-i18n="project.step1.title"></h4>
+              <p data-i18n="project.step1.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">2</div>
-              <h4>Formación en Francia</h4>
-              <p>Aprendizaje técnico y vivencias que formaron la base de la filosofía de cocina.</p>
+              <h4 data-i18n="project.step2.title"></h4>
+              <p data-i18n="project.step2.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">3</div>
-              <h4>Regreso a lo Argentino</h4>
-              <p>Vuelta al origen con la pasión de aplicar lo aprendido al sabor local.</p>
+              <h4 data-i18n="project.step3.title"></h4>
+              <p data-i18n="project.step3.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">4</div>
-              <h4>Primeras Recetas</h4>
-              <p>Medialunas, brioches, y experimentos llenos de aroma y sabor.</p>
-            </div>
-            <div class="timeline-step">
-              <div class="circle">5</div>
-              <h4>Lanzamiento</h4>
-              <p>El sueño se vuelve realidad: el horno se enciende, los primeros pedidos llegan.</p>
+              <h4 data-i18n="project.step4.title"></h4>
+              <p data-i18n="project.step4.text"></p>
             </div>
           </div>
         </div>
 
-
         <div class="description-project">
-          <p class="project-summary">
-            <span class="summary-title">~ Au Four Enchanté ~</span> nace del deseo de unir <em>lo mejor de dos
-              mundos</em>: la calidez y el sabor
-            de la gastronomía argentina, con la técnica, el detalle y la elegancia de la tradición francesa.
-          </p>
-          <p>
-            Es un proyecto <strong>artesanal</strong> que busca algo más que vender productos: <em>quiere compartir una
-              experiencia</em>. Cada elaboración es pensada con dedicación, utilizando <strong>ingredientes de
-              calidad</strong> y procesos que respetan el tiempo que necesita un buen pan, una masa hojaldrada o una
-            fermentación natural.
-          </p>
-          <p>
-            Más que una panadería, es un espacio donde la <em>pasión por la cocina</em> se transforma en aroma, textura
-            y sabor. Cada producto, desde una medialuna hasta un panzerotti, tiene detrás <strong>una historia</strong>,
-            <strong>una inspiración</strong> y una <strong>intención</strong>: <span class="highlight">emocionar a quien
-              lo pruebe</span>.
-          </p>
+          <p class="project-summary" data-i18n="project.summary"></p>
+          <p data-i18n="project.p1"></p>
+          <p data-i18n="project.p2"></p>
         </div>
       </div>
     </section>
 
     <section id="products" class="products">
       <div class="container">
-        <h2>Nuestros Productos</h2>
+        <h2 data-i18n="products.title">Nuestros Productos</h2>
         <div id="product-gallery" class="product-gallery"></div>
       </div>
     </section>
@@ -118,11 +99,13 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Au Four Enchanté. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Au Four Enchanté. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p class="location" data-i18n="footer.location">Ubicados en Valencia, España</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
 </body>
 
 </html>
