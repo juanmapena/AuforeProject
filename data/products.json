@@ -1,280 +1,621 @@
 [
-  {
-    "id": 1,
-    "image": "assets/images/panzerotti.jpg",
-    "translations": {
-      "es": {
-        "name": "Panzerottis",
-        "shortDescription": "Clásicos de Puglia, masa casera y relleno fior di latte.",
-        "ingredients": ["Harina", "Sémola", "Sal", "Azúcar", "Levadura fresca", "Leche", "Agua", "Aceite de oliva", "Mozzarella fior di latte", "Salsa de tomate", "Jamón cocido"],
-        "recipe": "Venidos directamente de Puglia hasta Valencia, con una masa casera hecha a mano. Rellenos de mozzarella fior di latte, salsa de tomate y jamón cocido. Fritos o al horno, como más te gusten."
+{
+ "id": 1,
+ "image": "assets/images/panzerotti.jpg",
+    "video": "assets/images/panzerotti-video.mp4", 
+ "translations": {
+"es": {
+"name": "Panzerottis",
+"shortDescription": "Clásicos de Puglia, masa casera y relleno fior di latte.",
+ "ingredients": [
+          "Harina",
+          "Sémola",
+          "Sal",
+          "Azúcar",
+          "Levadura fresca",
+          "Leche",
+          "Agua",
+          "Aceite de oliva",
+          "Mozzarella fior di latte",
+          "Salsa de tomate",
+          "Jamón cocido"
+        ],
+"recipe": "Venidos directamente de Puglia hasta Valencia, con una masa casera hecha a mano. Rellenos de mozzarella fior di latte, salsa de tomate y jamón cocido. Fritos o al horno, como más te gusten."
+
       },
-      "en": {
-        "name": "Panzerottis",
-        "shortDescription": "Classic from Puglia — homemade dough & fior di latte filling.",
-        "ingredients": ["Flour", "Semolina", "Salt", "Sugar", "Fresh yeast", "Milk", "Water", "Olive oil", "Fior di latte mozzarella", "Tomato sauce", "Cooked ham"],
-        "recipe": "Straight from Puglia to Valencia, with handmade dough. Filled with fior di latte mozzarella, tomato sauce and cooked ham. Fried or baked — as you like."
+"en": {
+ "name": "Panzerottis",
+ "shortDescription": "Classic from Puglia — homemade dough & fior di latte filling.",
+ "ingredients": [
+          "Flour",
+          "Semolina",
+          "Salt",
+          "Sugar",
+          "Fresh yeast",
+          "Milk",
+          "Water",
+          "Olive oil",
+          "Fior di latte mozzarella",
+          "Tomato sauce",
+          "Cooked ham"
+        ],
+ "recipe": "Straight from Puglia to Valencia, with handmade dough. Filled with fior di latte mozzarella, tomato sauce and cooked ham. Fried or baked — as you like."
+
       },
-      "fr": {
-        "name": "Panzerottis",
-        "shortDescription": "Classique des Pouilles — pâte maison et garniture fior di latte.",
-        "ingredients": ["Farine", "Semoule", "Sel", "Sucre", "Levure fraîche", "Lait", "Eau", "Huile d'olive", "Mozzarella fior di latte", "Sauce tomate", "Jambon cuit"],
-        "recipe": "Directement des Pouilles à Valence, pâte faite maison. Farcis de mozzarella fior di latte, sauce tomate et jambon cuit. Frits ou cuits au four — selon vos goûts."
+ "fr": {
+ "name": "Panzerottis",
+ "shortDescription": "Classique des Pouilles — pâte maison et garniture fior di latte.",
+ "ingredients": [
+          "Farine",
+          "Semoule",
+          "Sel",
+          "Sucre",
+          "Levure fraîche",
+          "Lait",
+          "Eau",
+          "Huile d'olive",
+          "Mozzarella fior di latte",
+          "Sauce tomate",
+          "Jambon cuit"
+        ],
+ "recipe": "Directement des Pouilles à Valence, pâte faite maison. Farcis de mozzarella fior di latte, sauce tomate et jambon cuit. Frits ou cuits au four — selon vos goûts."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+"es": "Alérgenos",
+ "en": "Allergens",
+ "fr": "Allergènes"
+
     },
-    "intolerances": ["gluten", "lacteos"]
+ "intolerances": [
+      "gluten",
+      "lacteos"
+    ]
   },
 
-  {
-    "id": 2,
-    "image": "assets/images/sanguche.jpg",
-    "translations": {
-      "es": {
-        "name": "Sanguches de Miga",
-        "shortDescription": "Clásico argentino, suave y con pan artesanal.",
-        "ingredients": ["Harina", "Agua", "Levadura fresca", "Azúcar", "Leche en polvo", "Sal", "Mantequilla"],
-        "recipe": "Un imprescindible argentino, elaborado con pan casero y charcutería de calidad. Suaves, frescos y perfectos para meriendas, desayunos o eventos."
+ {
+ "id": 2,
+ "image": "assets/images/sanguche.jpg",
+    "video": "assets/images/sanguche-video.mp4",
+ "translations": {
+ "es": {
+ "name": "Sanguches de Miga",
+"shortDescription": "Clásico argentino, suave y con pan artesanal.",
+"ingredients": [
+          "Harina",
+          "Agua",
+          "Levadura fresca",
+          "Azúcar",
+          "Leche en polvo",
+          "Sal",
+          "Mantequilla"
+        ],
+"recipe": "Un imprescindible argentino, elaborado con pan casero y charcutería de calidad. Suaves, frescos y perfectos para meriendas, desayunos o eventos."
+
       },
-      "en": {
-        "name": "Argentinian Sanguches",
-        "shortDescription": "Argentinian classic — soft with handmade bread.",
-        "ingredients": ["Flour", "Water", "Fresh yeast", "Sugar", "Powdered milk", "Salt", "Butter"],
-        "recipe": "An Argentine staple, made with homemade bread and quality cold‑cuts. Soft, fresh and perfect for snacks, breakfasts or gatherings."
+ "en": {
+ "name": "Argentinian Sanguches",
+"shortDescription": "Argentinian classic — soft with handmade bread.",
+ "ingredients": [
+          "Flour",
+          "Water",
+          "Fresh yeast",
+          "Sugar",
+          "Powdered milk",
+          "Salt",
+          "Butter"
+        ],
+ "recipe": "An Argentine staple, made with homemade bread and quality cold‑cuts. Soft, fresh and perfect for snacks, breakfasts or gatherings."
+
       },
-      "fr": {
-        "name": "Sandwiches Argentins",
-        "shortDescription": "Classique argentin — moelleux avec pain artisanal.",
-        "ingredients": ["Farine", "Eau", "Levure fraîche", "Sucre", "Lait en poudre", "Sel", "Beurre"],
-        "recipe": "Un incontournable argentin, préparé avec du pain maison et de la charcuterie de qualité. Moelleux, frais — idéal pour goûters, petits déjeuners ou événements."
+"fr": {
+ "name": "Sandwiches Argentins",
+ "shortDescription": "Classique argentin — moelleux avec pain artisanal.",
+"ingredients": [
+          "Farine",
+          "Eau",
+          "Levure fraîche",
+          "Sucre",
+          "Lait en poudre",
+          "Sel",
+          "Beurre"
+        ],
+"recipe": "Un incontournable argentin, préparé avec du pain maison et de la charcuterie de qualité. Moelleux, frais — idéal pour goûters, petits déjeuners ou événements."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+ "es": "Alérgenos",
+ "en": "Allergens",
+"fr": "Allergènes"
     },
-    "intolerances": ["gluten", "sulfitos", "lacteos"]
+ "intolerances": [
+      "gluten",
+      "sulfitos",
+      "lacteos"
+    ]
+
   },
 
-  {
-    "id": 3,
-    "image": "assets/images/medialunas.jpg",
-    "translations": {
-      "es": {
-        "name": "Medialunas Argentinas",
-        "shortDescription": "Hojaldre suave, dulce y con mantequilla.",
-        "ingredients": ["Harina", "Mantequilla", "Leche", "Huevos", "Azúcar", "Sal", "Levadura fresca"],
-        "recipe": "Clásico argentino que disfrutamos en cualquier momento del día. Hechas a mano con 3 días de fermentación, pinceladas con almíbar y elaboradas con mantequilla de calidad."
+{
+"id": 3,
+ "image": "assets/images/medialunas.jpg",
+    "video": "assets/images/medialunas-video.mp4",
+ "translations": {
+ "es": {
+ "name": "Medialunas Argentinas",
+ "shortDescription": "Hojaldre suave, dulce y con mantequilla.",
+"ingredients": [
+          "Harina",
+          "Mantequilla",
+          "Leche",
+          "Huevos",
+          "Azúcar",
+          "Sal",
+          "Levadura fresca"
+        ],
+ "recipe": "Clásico argentino que disfrutamos en cualquier momento del día. Hechas a mano con 3 días de fermentación, pinceladas con almíbar y elaboradas con mantequilla de calidad."
+
       },
-      "en": {
-        "name": "Argentinian Medialunas",
-        "shortDescription": "Soft, sweet puff pastry with butter.",
-        "ingredients": ["Flour", "Butter", "Milk", "Eggs", "Sugar", "Salt", "Fresh yeast"],
-        "recipe": "Argentinian classic enjoyed any time of day. Handmade with 3‑day fermentation, brushed with syrup and crafted with quality butter."
+ "en": {
+"name": "Argentinian Medialunas",
+"shortDescription": "Soft, sweet puff pastry with butter.",
+ "ingredients": [
+          "Flour",
+          "Butter",
+          "Milk",
+          "Eggs",
+          "Sugar",
+          "Salt",
+          "Fresh yeast"
+        ],
+ "recipe": "Argentinian classic enjoyed any time of day. Handmade with 3‑day fermentation, brushed with syrup and crafted with quality butter."
+
       },
-      "fr": {
-        "name": "Medialunas Argentines",
-        "shortDescription": "Pâte feuilletée douce, sucrée et au beurre.",
-        "ingredients": ["Farine", "Beurre", "Lait", "Œufs", "Sucre", "Sel", "Levure fraîche"],
-        "recipe": "Classique argentin à déguster à tout moment. Fait main, 3 jours de fermentation, nappé de sirop et réalisé avec du beurre de qualité."
+"fr": {
+"name": "Medialunas Argentines",
+"shortDescription": "Pâte feuilletée douce, sucrée et au beurre.",
+"ingredients": [
+          "Farine",
+          "Beurre",
+          "Lait",
+          "Œufs",
+          "Sucre",
+          "Sel",
+          "Levure fraîche"
+        ],
+"recipe": "Classique argentin à déguster à tout moment. Fait main, 3 jours de fermentation, nappé de sirop et réalisé avec du beurre de qualité."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+ "es": "Alérgenos",
+ "en": "Allergens",
+ "fr": "Allergènes"
+
     },
-    "intolerances": ["gluten", "huevos", "lacteos"]
+ "intolerances": [
+      "gluten",
+      "huevos",
+      "lacteos"
+    ]
+
   },
 
-  {
-    "id": 4,
-    "image": "assets/images/tarta.jpg",
-    "translations": {
-      "es": {
-        "name": "Tarta de Ricota",
-        "shortDescription": "Suavidad, dulzura y tradición argentina.",
-        "ingredients": ["Harina", "Mantequilla", "Azúcar", "Huevos", "Esencia de vainilla", "Limón", "Polvo para hornear", "Sal", "Ricota", "Queso crema"],
-        "recipe": "Un clásico argentino, hecha completamente a mano con masa quebrada desde cero. Disponible en formato tartaleta o XL."
+{
+ "id": 4,
+ "image": "assets/images/tarta.jpg",
+    "video": "assets/images/tartaricota-video.mp4",
+"translations": {
+"es": {
+ "name": "Tarta de Ricota",
+"shortDescription": "Suavidad, dulzura y tradición argentina.",
+ "ingredients": [
+          "Harina",
+          "Mantequilla",
+          "Azúcar",
+          "Huevos",
+          "Esencia de vainilla",
+          "Limón",
+          "Polvo para hornear",
+          "Sal",
+          "Ricota",
+          "Queso crema"
+        ],
+"recipe": "Un clásico argentino, hecha completamente a mano con masa quebrada desde cero. Disponible en formato tartaleta o XL."
+
       },
-      "en": {
-        "name": "Ricotta Tart",
-        "shortDescription": "Softness, sweetness and Argentine tradition.",
-        "ingredients": ["Flour", "Butter", "Sugar", "Eggs", "Vanilla essence", "Lemon", "Baking powder", "Salt", "Ricotta", "Cream cheese"],
-        "recipe": "An Argentine classic, handmade from scratch with short‑crust dough. Available as tartlet or XL format."
+ "en": {
+ "name": "Ricotta Tart",
+ "shortDescription": "Softness, sweetness and Argentine tradition.",
+"ingredients": [
+          "Flour",
+          "Butter",
+          "Sugar",
+          "Eggs",
+          "Vanilla essence",
+          "Lemon",
+          "Baking powder",
+          "Salt",
+          "Ricotta",
+          "Cream cheese"
+        ],
+"recipe": "An Argentine classic, handmade from scratch with short‑crust dough. Available as tartlet or XL format."
+
       },
-      "fr": {
-        "name": "Tarte à la Ricotta",
-        "shortDescription": "Douceur et tradition argentine.",
-        "ingredients": ["Farine", "Beurre", "Sucre", "Œufs", "Extrait de vanille", "Citron", "Levure chimique", "Sel", "Ricotta", "Fromage à la crème"],
-        "recipe": "Un classique argentin, fait entièrement à la main avec une pâte brisée maison. Disponible en format tartelette ou XL."
+ "fr": {
+"name": "Tarte à la Ricotta",
+ "shortDescription": "Douceur et tradition argentine.",
+"ingredients": [
+          "Farine",
+          "Beurre",
+          "Sucre",
+          "Œufs",
+          "Extrait de vanille",
+          "Citron",
+          "Levure chimique",
+          "Sel",
+          "Ricotta",
+          "Fromage à la crème"
+        ],
+ "recipe": "Un classique argentin, fait entièrement à la main avec une pâte brisée maison. Disponible en format tartelette ou XL."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+"es": "Alérgenos",
+"en": "Allergens",
+ "fr": "Allergènes"
+
     },
-    "intolerances": ["gluten", "lacteos", "huevos"]
+"intolerances": [
+      "gluten",
+      "lacteos",
+      "huevos"
+    ]
+
   },
 
-  {
-    "id": 5,
-    "image": "assets/images/eclair.jpg",
-    "translations": {
-      "es": {
-        "name": "Éclair",
-        "shortDescription": "Clásico francés de masa choux.",
-        "ingredients": ["Agua", "Mantequilla", "Azúcar", "Harina", "Huevos"],
-        "recipe": "Clásico francés elaborado con masa choux, presentado en forma alargada. Disponible con diferentes tipos de relleno."
+{
+"id": 5,
+"image": "assets/images/eclair.jpg",
+    "video": "assets/images/eclair-video.mp4",
+ "translations": {
+ "es": {
+ "name": "Éclair",
+"shortDescription": "Clásico francés de masa choux.",
+ "ingredients": [
+          "Agua",
+          "Mantequilla",
+          "Azúcar",
+          "Harina",
+          "Huevos"
+        ],
+ "recipe": "Clásico francés elaborado con masa choux, presentado en forma alargada. Disponible con diferentes tipos de relleno."
+
       },
-      "en": {
-        "name": "Éclair",
-        "shortDescription": "French classic — choux pastry.",
-        "ingredients": ["Water", "Butter", "Sugar", "Flour", "Eggs"],
-        "recipe": "French classic made with choux pastry, shaped elongated. Available in various fillings."
+"en": {
+"name": "Éclair",
+ "shortDescription": "French classic — choux pastry.",
+"ingredients": [
+          "Water",
+          "Butter",
+          "Sugar",
+          "Flour",
+          "Eggs"
+        ],
+ "recipe": "French classic made with choux pastry, shaped elongated. Available in various fillings."
+
       },
-      "fr": {
-        "name": "Éclair",
-        "shortDescription": "Classique français — pâte à choux.",
-        "ingredients": ["Eau", "Beurre", "Sucre", "Farine", "Œufs"],
-        "recipe": "Classique français réalisé avec pâte choux, en forma allongée. Disponible avec varias garnitures."
+ "fr": {
+"name": "Éclair",
+"shortDescription": "Classique français — pâte à choux.",
+"ingredients": [
+          "Eau",
+          "Beurre",
+          "Sucre",
+          "Farine",
+          "Œufs"
+        ],
+"recipe": "Classique français réalisé avec pâte choux, en forma allongée. Disponible avec varias garnitures."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+ "es": "Alérgenos",
+ "en": "Allergens",
+"fr": "Allergènes"
+
     },
-    "intolerances": ["lacteos", "gluten", "huevos"]
+ "intolerances": [
+      "lacteos",
+      "gluten",
+      "huevos"
+    ]
+
   },
 
-  {
-    "id": 6,
-    "image": "assets/images/croux.jpg",
-    "translations": {
-      "es": {
-        "name": "Choux",
-        "shortDescription": "Redondo, suave y con craquelin.",
-        "ingredients": ["Agua", "Mantequilla", "Azúcar", "Harina", "Huevos"],
-        "recipe": "Clásico francés de masa choux, en versión redonda y cubierto con un craquelado crujiente."
+{
+ "id": 6,
+ "image": "assets/images/croux.jpg",
+    "video": "assets/images/choux-video.mp4",
+"translations": {
+"es": {
+"name": "Choux",
+ "shortDescription": "Redondo, suave y con craquelin.",
+ "ingredients": [
+          "Agua",
+          "Mantequilla",
+          "Azúcar",
+          "Harina",
+          "Huevos"
+        ],
+"recipe": "Clásico francés de masa choux, en versión redonda y cubierto con un craquelado crujiente."
+
       },
-      "en": {
-        "name": "Choux",
-        "shortDescription": "Round, soft and crisp‑topped.",
-        "ingredients": ["Water", "Butter", "Sugar", "Flour", "Eggs"],
-        "recipe": "French classic choux pastry, in round form covered with a crunchy craquelin."
+ "en": {
+ "name": "Choux",
+"shortDescription": "Round, soft and crisp‑topped.",
+"ingredients": [
+          "Water",
+          "Butter",
+          "Sugar",
+          "Flour",
+          "Eggs"
+        ],
+"recipe": "French classic choux pastry, in round form covered with a crunchy craquelin."
+
       },
-      "fr": {
-        "name": "Choux",
-        "shortDescription": "Rond, moelleux et craquelin croustillant.",
-        "ingredients": ["Eau", "Beurre", "Sucre", "Farine", "Œufs"],
-        "recipe": "Classique français avec pâte choux ronde, recouverte d’un craquelin croustillant."
+ "fr": {
+ "name": "Choux",
+"shortDescription": "Rond, moelleux et craquelin croustillant.",
+"ingredients": [
+          "Eau",
+          "Beurre",
+          "Sucre",
+          "Farine",
+          "Œufs"
+        ],
+"recipe": "Classique français avec pâte choux ronde, recouverte d’un craquelin croustillant."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+"es": "Alérgenos",
+ "en": "Allergens",
+ "fr": "Allergènes"
+
     },
-    "intolerances": ["lacteos", "gluten", "huevos"]
+"intolerances": [
+      "lacteos",
+      "gluten",
+      "huevos"
+    ]
+
   },
 
-  {
-    "id": 7,
-    "image": "assets/images/paris-brest-mejorado.jpg",
-    "translations": {
-      "es": {
-        "name": "Paris Brest",
-        "shortDescription": "Masa choux en forma de rosca con craquelin.",
-        "ingredients": ["Agua", "Mantequilla", "Azúcar", "Harina", "Huevos"],
-        "recipe": "Clásico francés del siglo XVI, elaborado con masa choux en forma de rosca y cubierto con craquelado."
+ {
+ "id": 7,
+ "image": "assets/images/paris-brest-mejorado.jpg",
+    "video": "assets/images/parisbrest-video.mp4",
+ "translations": {
+ "es": {
+"name": "Paris Brest",
+ "shortDescription": "Masa choux en forma de rosca con craquelin.",
+"ingredients": [
+          "Agua",
+          "Mantequilla",
+          "Azúcar",
+          "Harina",
+          "Huevos"
+        ],
+ "recipe": "Clásico francés del siglo XVI, elaborado con masa choux en forma de rosca y cubierto con craquelado."
+
       },
-      "en": {
-        "name": "Paris Brest",
-        "shortDescription": "Choux pastry ring with craquelin.",
-        "ingredients": ["Water", "Butter", "Sugar", "Flour", "Eggs"],
-        "recipe": "16th‑century French classic, choux pastry shaped as a ring and topped with craquelin."
+"en": {
+"name": "Paris Brest",
+"shortDescription": "Choux pastry ring with craquelin.",
+ "ingredients": [
+          "Water",
+          "Butter",
+          "Sugar",
+          "Flour",
+          "Eggs"
+        ],
+ "recipe": "16th‑century French classic, choux pastry shaped as a ring and topped with craquelin."
+
       },
-      "fr": {
-        "name": "Paris Brest",
-        "shortDescription": "Couronne pâte choux avec craquelin.",
-        "ingredients": ["Eau", "Beurre", "Sucre", "Farine", "Œufs"],
-        "recipe": "Classique français du XVIᵉ siècle, pâte choux en forma d’anneau et recouverte de craquelin."
+ "fr": {
+ "name": "Paris Brest",
+ "shortDescription": "Couronne pâte choux avec craquelin.",
+"ingredients": [
+          "Eau",
+          "Beurre",
+          "Sucre",
+          "Farine",
+          "Œufs"
+        ],
+"recipe": "Classique français du XVIᵉ siècle, pâte choux en forma d’anneau et recouverte de craquelin."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+"es": "Alérgenos",
+"en": "Allergens",
+"fr": "Allergènes"
+
     },
-    "intolerances": ["lacteos", "gluten", "huevos"]
+ "intolerances": [
+      "lacteos",
+      "gluten",
+      "huevos"
+    ]
+
   },
 
-  {
-    "id": 8,
-    "image": "assets/images/tartaletas.jpg",
-    "translations": {
-      "es": {
-        "name": "Tartaleta de Limón y Merengue Italiano",
-        "shortDescription": "Dulce, cítrica y equilibrada.",
-        "ingredients": ["Leche", "Maicena", "Azúcar", "Jugo de limón", "Ralladura de limón", "Huevos", "Manteca", "Harina de almendras", "Harina", "Azúcar glas"],
-        "recipe": "Postre clásico que combina una base crujiente, un relleno cremoso y merengue italiano. Equilibrio perfecto entre dulzura y acidez."
+{
+"id": 8,
+ "image": "assets/images/tartaletas.jpg",
+    "video": "assets/images/tartalimon-video.mp4",
+"translations": {
+"es": {
+ "name": "Tartaleta de Limón y Merengue Italiano",
+ "shortDescription": "Dulce, cítrica y equilibrada.",
+ "ingredients": [
+          "Leche",
+          "Maicena",
+          "Azúcar",
+          "Jugo de limón",
+          "Ralladura de limón",
+          "Huevos",
+          "Manteca",
+          "Harina de almendras",
+          "Harina",
+          "Azúcar glas"
+        ],
+"recipe": "Postre clásico que combina una base crujiente, un relleno cremoso y merengue italiano. Equilibrio perfecto entre dulzura y acidez."
+
       },
-      "en": {
-        "name": "Lemon Tart with Italian Meringue",
-        "shortDescription": "Sweet, citrusy and balanced.",
-        "ingredients": ["Milk", "Cornstarch", "Sugar", "Lemon juice", "Lemon zest", "Eggs", "Butter", "Almond flour", "Flour", "Powdered sugar"],
-        "recipe": "Classic dessert combining a crunchy base, creamy filling and Italian meringue — a perfect balance of sweetness and acidity."
+ "en": {
+ "name": "Lemon Tart with Italian Meringue",
+"shortDescription": "Sweet, citrusy and balanced.",
+ "ingredients": [
+          "Milk",
+          "Cornstarch",
+          "Sugar",
+          "Lemon juice",
+          "Lemon zest",
+          "Eggs",
+          "Butter",
+          "Almond flour",
+          "Flour",
+          "Powdered sugar"
+        ],
+ "recipe": "Classic dessert combining a crunchy base, creamy filling and Italian meringue — a perfect balance of sweetness and acidity."
+
       },
-      "fr": {
-        "name": "Tarte Citron & Meringue Italienne",
-        "shortDescription": "Sucrée, acidulée et équilibrée.",
-        "ingredients": ["Lait", "Fécule de maïs", "Sucre", "Jus de citron", "Zeste de citron", "Œufs", "Beurre", "Farine d’amandes", "Farine", "Sucre glace"],
-        "recipe": "Dessert classique combinant une base croustillante, une crème onctueuse et une meringue italienne — l’équilibre parfait entre douceur et acidité."
+"fr": {
+"name": "Tarte Citron & Meringue Italienne",
+"shortDescription": "Sucrée, acidulée et équilibrée.",
+"ingredients": [
+          "Lait",
+          "Fécule de maïs",
+          "Sucre",
+          "Jus de citron",
+          "Zeste de citron",
+          "Œufs",
+          "Beurre",
+          "Farine d’amandes",
+          "Farine",
+          "Sucre glace"
+        ],
+"recipe": "Dessert classique combinant une base croustillante, une crème onctueuse et une meringue italienne — l’équilibre parfait entre douceur et acidité."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+ "es": "Alérgenos",
+"en": "Allergens",
+"fr": "Allergènes"
+
     },
-    "intolerances": ["gluten", "lacteos", "huevos", "frutos_secos"]
+"intolerances": [
+      "gluten",
+      "lacteos",
+      "huevos",
+      "frutos_secos"
+    ]
+
   },
 
-  {
-    "id": 9,
-    "image": "assets/images/tartaleta-mejor.jpg",
-    "translations": {
-      "es": {
-        "name": "Tartaleta de Manzana y Cremoso de Vainilla",
-        "shortDescription": "Aromática, cálida y delicada.",
-        "ingredients": ["Huevos", "Manteca", "Harina de almendras", "Harina", "Azúcar glas", "Manzana golden", "Vaina de vainilla", "Canela", "Crema", "Chocolate blanco", "Leche", "Gelatina"],
-        "recipe": "Base crujiente rellena de compota de manzana aromatizada con vainilla y canela. Acompañada de un cremoso suave de vainilla que equilibra las notas especiadas."
+{
+ "id": 9,
+"image": "assets/images/tartaleta-mejor.jpg",
+    "video": "assets/images/tartamanzana-video.mp4",
+ "translations": {
+ "es": {
+ "name": "Tartaleta de Manzana y Cremoso de Vainilla",
+ "shortDescription": "Aromática, cálida y delicada.",
+ "ingredients": [
+          "Huevos",
+          "Manteca",
+          "Harina de almendras",
+          "Harina",
+          "Azúcar glas",
+          "Manzana golden",
+          "Vaina de vainilla",
+          "Canela",
+          "Crema",
+          "Chocolate blanco",
+          "Leche",
+          "Gelatina"
+        ],
+ "recipe": "Base crujiente rellena de compota de manzana aromatizada con vainilla y canela. Acompañada de un cremoso suave de vainilla que equilibra las notas especiadas."
+
       },
-      "en": {
-        "name": "Apple Tart & Vanilla Cream",
-        "shortDescription": "Aromatic, warm and delicate.",
-        "ingredients": ["Eggs", "Butter", "Almond flour", "Flour", "Powdered sugar", "Golden apple", "Vanilla bean", "Cinnamon", "Cream", "White chocolate", "Milk", "Gelatin"],
-        "recipe": "Crispy base filled with apple compote flavored with vanilla and cinnamon. Paired with a smooth vanilla cream balancing the warm, spiced notes."
+"en": {
+ "name": "Apple Tart & Vanilla Cream",
+"shortDescription": "Aromatic, warm and delicate.",
+ "ingredients": [
+          "Eggs",
+          "Butter",
+          "Almond flour",
+          "Flour",
+          "Powdered sugar",
+          "Golden apple",
+          "Vanilla bean",
+          "Cinnamon",
+          "Cream",
+          "White chocolate",
+          "Milk",
+          "Gelatin"
+        ],
+"recipe": "Crispy base filled with apple compote flavored with vanilla and cinnamon. Paired with a smooth vanilla cream balancing the warm, spiced notes."
+
       },
-      "fr": {
-        "name": "Crémeux Vanille",
-        "shortDescription": "Aromatique, chaleureuse et délicate.",
-        "ingredients": ["Œufs", "Beurre", "Farine d’amandes", "Farine", "Sucre glace", "Pomme golden", "Gousse de vanille", "Cannelle", "Crème", "Chocolat blanc", "Lait", "Gélatine"],
-        "recipe": "Base croustillante garnie de compote de pomme parfumée à la vanille et à la cannelle. Accompagnée d’une crème vanille onctueuse équilibrant les notes épicées."
+"fr": {
+"name": "Crémeux Vanille",
+ "shortDescription": "Aromatique, chaleureuse et délicate.",
+"ingredients": [
+          "Œufs",
+          "Beurre",
+          "Farine d’amandes",
+          "Farine",
+          "Sucre glace",
+          "Pomme golden",
+          "Gousse de vanille",
+          "Cannelle",
+          "Crème",
+          "Chocolat blanc",
+          "Lait",
+          "Gélatine"
+        ],
+"recipe": "Base croustillante garnie de compote de pomme parfumée à la vanille et à la cannelle. Accompagnée d’une crème vanille onctueuse équilibrant les notes épicées."
+
       }
+
     },
-    "intolerancesText": {
-      "es": "Alérgenos",
-      "en": "Allergens",
-      "fr": "Allergènes"
+ "intolerancesText": {
+"es": "Alérgenos",
+"en": "Allergens",
+"fr": "Allergènes"
+
     },
-    "intolerances": ["gluten", "huevos", "frutos_secos", "lacteos"]
+"intolerances": [
+      "gluten",
+      "huevos",
+      "frutos_secos",
+      "lacteos"
+    ]
+
   }
 ]

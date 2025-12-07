@@ -298,8 +298,78 @@ header {
   text-align: center;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  /* <--- CLAVE: FUERZA MAYÚSCULAS para el título principal */
 }
+
+/* --- ESTILOS DEL SLIDER IMAGEN/VIDEO --- */
+.product-slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.product-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
+  /* Altura fija para el contenedor */
+  border-radius: 12px;
+}
+
+.media-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-item.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Controles de navegación */
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.slider-dot.active-dot {
+  background-color: #F96635;
+  /* Color del header */
+  transform: scale(1.2);
+}
+
+/* --- FIN ESTILOS DEL SLIDER IMAGEN/VIDEO --- */
+
 
 /* CENTRADO GENERAL DEL CONTENIDO DE LA INFO DEL PRODUCTO */
 .product-info {
@@ -308,7 +378,6 @@ header {
 
 .product-info h3 {
   text-align: left;
-  /* Títulos de Ingredientes/Descripción alineados a la izquierda */
   margin-bottom: 1em;
 }
 
@@ -317,12 +386,10 @@ header {
   margin-bottom: 2rem;
 }
 
+/* Estilos de imagen dentro del slider */
 .product-detail img {
-  max-height: 450px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  width: 100%;
+  max-height: none;
+  margin-bottom: 0;
 }
 
 .product-detail ul {
@@ -446,11 +513,8 @@ footer .social-media a img {
 
 footer .social-media a:hover img {
   transform: scale(1.2);
-  filter: none; 
+  filter: none;
 }
-
-
-
 
 
 /* INTOLERANCIAS */
@@ -513,14 +577,11 @@ footer .social-media a:hover img {
   .menu-toggle {
     display: block;
     order: 1;
-    /* IZQUIERDA */
   }
 
   .logo {
     order: 2;
-    /* CENTRO */
     margin: 0 auto;
-    /* Centrado */
     flex-grow: 0;
     text-align: center;
   }
@@ -529,7 +590,6 @@ footer .social-media a:hover img {
     display: flex;
     align-items: center;
     order: 3;
-    /* DERECHA */
     margin-left: 0;
   }
 
@@ -582,6 +642,11 @@ footer .social-media a:hover img {
   /* PRODUCT DETAIL */
   .product-detail {
     padding: 2rem 0;
+  }
+
+  /* Ajuste de altura del slider en móvil */
+  .product-slider {
+    height: 300px;
   }
 
   .product-detail h1 {
@@ -637,6 +702,11 @@ footer .social-media a:hover img {
   .language-switcher select {
     padding: 0.2rem 0.4rem;
     width: auto;
+  }
+
+  /* Ajuste de altura del slider en móvil pequeño */
+  .product-slider {
+    height: 250px;
   }
 
   /* PRODUCT DETAIL */

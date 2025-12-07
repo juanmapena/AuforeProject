@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,32 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="shortcut icon" href="./assets/images/favicon-32x32.png">
 </head>
+
 <body>
   <main class="product-detail">
     <div class="container">
       <h1 id="product-name"></h1>
 
-      <div class="product-image-wrapper">
-        <img id="product-image" alt="Imagen del producto">
-      </div>
+      <div class="product-slider-wrapper">
+        <div class="product-slider">
 
+          <div id="media-image" class="media-item active">
+            <img id="product-image" alt="Imagen del producto">
+          </div>
+
+          <div id="media-video" class="media-item">
+            <video id="product-video" loop muted playsinline></video>
+          </div>
+
+        </div>
+
+        <div id="slider-controls" class="slider-controls">
+          <span id="control-image" class="slider-dot active-dot"></span>
+          <span id="control-video" class="slider-dot"></span>
+        </div>
+
+
+      </div>
       <div id="intolerances" class="intolerances-box"></div>
 
       <div class="product-info">
@@ -31,12 +49,14 @@
         <p id="product-recipe"></p>
 
         <div class="product-buttons">
-          <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram instagram" data-i18n="product.instagram">Ver más en Instagram</a>
+          <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram instagram"
+            data-i18n="product.instagram">Ver más en Instagram</a>
           <a href="index.html" class="btn-back" data-i18n="product.back">← Volver</a>
         </div>
       </div>
     </div>
   </main>
+
 
   <script>
     // Mapeo de íconos según intolerancia + idioma
@@ -70,9 +90,26 @@
     if (product) {
       const t = product.translations[currentLang] || product.translations.es;
 
+      const videoElement = document.getElementById("product-video");
+      const mediaVideoDiv = document.getElementById("media-video");
+      const controlVideo = document.getElementById("control-video");
+      const mediaImageDiv = document.getElementById("media-image");
+      const controlImage = document.getElementById("control-image");
+      const sliderControls = document.getElementById("slider-controls");
+
       document.getElementById("product-name").textContent = t.name || "";
       document.getElementById("product-image").src = product.image || "";
       document.getElementById("product-image").alt = t.name || "";
+
+      // Carga el video si existe
+      if (product.video) {
+        videoElement.src = product.video;
+        videoElement.load();
+      } else {
+        // Si no hay video, ocultar el control
+        if (controlVideo) controlVideo.style.display = 'none';
+        if (sliderControls) sliderControls.style.display = 'none';
+      }
 
       const ingredientsList = document.getElementById("product-ingredients");
       ingredientsList.innerHTML = "";
@@ -101,11 +138,38 @@
         intolerancesDiv.innerHTML = html;
       }
 
+      /* --- Lógica del Slider/Toggle (Imagen <-> Video) --- */
+      if (product.video) {
+        function showImage() {
+          mediaImageDiv.classList.add('active');
+          mediaVideoDiv.classList.remove('active');
+          controlImage.classList.add('active-dot');
+          controlVideo.classList.remove('active-dot');
+          videoElement.pause();
+          videoElement.currentTime = 0; // Opcional: reiniciar el video
+        }
+
+        function showVideo() {
+          mediaImageDiv.classList.remove('active');
+          mediaVideoDiv.classList.add('active');
+          controlImage.classList.remove('active-dot');
+          controlVideo.classList.add('active-dot');
+          videoElement.play();
+        }
+
+        if (controlImage && controlVideo) {
+          controlImage.addEventListener('click', showImage);
+          controlVideo.addEventListener('click', showVideo);
+        }
+      }
+
     } else {
       document.body.innerHTML = "<p style='text-align:center;'>No se encontró el producto.</p>";
     }
   </script>
 
+
   <script src="./js/lang.js"></script>
 </body>
+
 </html>
