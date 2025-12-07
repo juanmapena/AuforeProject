@@ -27,8 +27,6 @@ const translations = {
     "products.title": "Nuestros Productos",
     "product.ingredients": "Ingredientes",
     "product.description": "Descripción",
-
-    // TRADUCCIONES DE BOTONES AÑADIDAS
     "product.instagram": "Ver más en Instagram",
     "product.back": "← Volver",
 
@@ -64,8 +62,6 @@ const translations = {
     "products.title": "Our Products",
     "product.ingredients": "Ingredients",
     "product.description": "Description",
-
-    // TRADUCCIONES DE BOTONES AÑADIDAS
     "product.instagram": "See more on Instagram",
     "product.back": "← Back",
 
@@ -88,23 +84,21 @@ const translations = {
     "project.step1.title": "Début du projet",
     "project.step1.text": "Une idée née de l'amour de la gastronomie française.",
     "project.step2.title": "Formation en France",
-    "project.step2.text": "Apprentissage technique et expériences qui ont forgé la base de la philosophie culinaire.",
+    "project.step2.text": "Apprentissage, techniques et expériences qui ont forgé la base de la philosophie culinaire.",
     "project.step3.title": "Retour aux origines",
     "project.step3.text": "Retour aux sources avec la passion d'appliquer ce que j'ai appris aux saveurs locales.",
     "project.step4.title": "Premières Recettes",
     "project.step4.text": "Croissants, desserts et expériences riches en saveurs.",
 
     "project.summary": "Au Four Enchanté est né du désir d'unir le meilleur de deux mondes : la chaleur et la saveur de la gastronomie argentine avec la technique, le détail et l'élégance de la tradition française.",
-    "project.p1": "C’est un projet artisanal qui cherche à offrir plus que des produits : il souhaite partager une expérience. Chaque création est réalisée avec soin, en utilisant des ingrédients de qualité et des processus respectueux du temps.",
-    "project.p2": "Plus qu'une boulangerie ou une pâtisserie, c'est un espace où la passion devient arôme, texture et saveur. Chaque producto a une histoire, une inspiration et une intention : émouvoir celui qui le goûte.",
+    "project.p1": "C’est un projet artisanal qui cherche à offrir plus que des productos : il souhaite partager une expérience. Chaque création est réalisée avec soin, en utilisant des ingrédients de qualité y procesos respetuosos du temps.",
+    "project.p2": "Plus qu'une boulangerie ou une pâtisserie, c'est un espace donde la passion devient arôme, textura y sabor. Chaque producto tiene una historia, una inspiración y una intención : émouvoir celui qui le goûte.",
 
     "products.title": "Nos Produits",
     "product.ingredients": "Ingrédients",
     "product.description": "Description",
-
-    // TRADUCCIONES DE BOTONES AÑADIDAS
     "product.instagram": "Voir plus sur Instagram",
-    "product.back": "← Retourner",
+    "product.back": "← Retour",
 
     "footer.location": "Situés à Valence, Espagne",
     "footer.rights": "Tous droits réservés."
@@ -113,28 +107,21 @@ const translations = {
 
 function changeLanguage(lang) {
   const elements = document.querySelectorAll("[data-i18n]");
-
-  elements.forEach((el) => {
+  elements.forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
-
   localStorage.setItem("selectedLanguage", lang);
-
   if (typeof renderProducts === "function") {
-    renderProducts(lang); // vuelve a renderizar productos si existe esa función
+    renderProducts(lang);
   }
-
-
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  let lang = localStorage.getItem("selectedLanguage") || "es";
-
+  const lang = localStorage.getItem("selectedLanguage") || "es";
   const selector = document.querySelector(".language-switcher select");
   if (selector) selector.value = lang;
-
   changeLanguage(lang);
 });

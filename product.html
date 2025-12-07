@@ -12,51 +12,71 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="shortcut icon" href="./assets/images/favicon-32x32.png">
 </head>
-
 <body>
-      <main class="product-detail">
-            <div class="container">
-                  <h1 id="product-name"></h1>
+  <main class="product-detail">
+    <div class="container">
+      <h1 id="product-name"></h1>
 
-                  <div class="product-image-wrapper">
-                        <img id="product-image" alt="Imagen del producto">
-                    </div>
+      <div class="product-image-wrapper">
+        <img id="product-image" alt="Imagen del producto">
+      </div>
 
-                  <div id="intolerances" class="intolerances-box"></div>
+      <div id="intolerances" class="intolerances-box"></div>
 
-                  <div class="product-info">
-                        <h3 data-i18n="product.ingredients">Ingredientes</h3>
-                        <ul id="product-ingredients"></ul>
+      <div class="product-info">
+        <h3 data-i18n="product.ingredients">Ingredientes</h3>
+        <ul id="product-ingredients"></ul>
 
-                        <h3 data-i18n="product.description">Descripción</h3>
-                        <p id="product-recipe"></p>
+        <h3 data-i18n="product.description">Descripción</h3>
+        <p id="product-recipe"></p>
 
-                        <div class="product-buttons">
-                              <a href="https://www.instagram.com/aufourenchante" target="_blank"
-            class="btn-instagram instagram" data-i18n="product.instagram">Ver más en Instagram</a>
-                              <a href="index.html" class="btn-back" data-i18n="product.back">← Volver</a>
-                          </div>
-                    </div>
-              </div>
-        </main>
+        <div class="product-buttons">
+          <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram instagram" data-i18n="product.instagram">Ver más en Instagram</a>
+          <a href="index.html" class="btn-back" data-i18n="product.back">← Volver</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script>
+    // Mapeo de íconos según intolerancia + idioma
+    const intoleranceIcons = {
+      es: {
+        lacteos: "assets/images/2.png",
+        sulfitos: "assets/images/3.png",
+        huevos: "assets/images/4.png",
+        frutos_secos: "assets/images/5.png",
+        gluten: "assets/images/6.png"
+      },
+      en: {
+        lacteos: "assets/images/en-2.png",
+        sulfitos: "assets/images/en-3.png",
+        huevos: "assets/images/en-4.png",
+        frutos_secos: "assets/images/en-5.png",
+        gluten: "assets/images/6.png"
+      },
+      fr: {
+        lacteos: "assets/images/fr-2.png",
+        sulfitos: "assets/images/fr-3.png",
+        huevos: "assets/images/fr-4.png",
+        frutos_secos: "assets/images/fr-5.png",
+        gluten: "assets/images/6.png"
+      }
+    };
+
     const product = JSON.parse(localStorage.getItem("selectedProduct"));
     const currentLang = localStorage.getItem("selectedLanguage") || "es";
 
     if (product) {
-      // Si la traducción para el idioma actual no existe, usa 'es' (Español)
       const t = product.translations[currentLang] || product.translations.es;
 
-      document.getElementById("product-name").textContent = t.name;
-      document.getElementById("product-image").src = product.image;
-      document.getElementById("product-image").alt = t.name;
+      document.getElementById("product-name").textContent = t.name || "";
+      document.getElementById("product-image").src = product.image || "";
+      document.getElementById("product-image").alt = t.name || "";
 
       const ingredientsList = document.getElementById("product-ingredients");
       ingredientsList.innerHTML = "";
-
-      // Comprobación para t.ingredients
-      if (t.ingredients && Array.isArray(t.ingredients)) {
+      if (Array.isArray(t.ingredients)) {
         t.ingredients.forEach(item => {
           const li = document.createElement("li");
           li.textContent = item;
@@ -64,36 +84,28 @@
         });
       }
 
-      document.getElementById("product-recipe").textContent = t.recipe;
+      document.getElementById("product-recipe").textContent = t.recipe || "";
 
-      /* INTOLERANCIAS */
+      // INTOLERANCIAS
       const intolerancesDiv = document.getElementById("intolerances");
-
-      // Comprobación añadida para Intolerancias
-      if (product.intolerancesText && product.icons) {
-        let text = product.intolerancesText[currentLang] || product.intolerancesText.es;
-        let icons = product.icons;
-
-        let html = `<p class='intolerances-text'>${text}</p><div class='intolerances-icons'>`;
-
-        if (Array.isArray(icons)) {
-          icons.forEach(icon => {
-            html += `<img src='${icon}' alt='intolerancia'>`;
-          });
-        }
-
-        html += "</div>";
-
+      if (Array.isArray(product.intolerances) && product.intolerances.length > 0) {
+        const text = product.intolerancesText?.[currentLang] || product.intolerancesText?.es || "";
+        let html = `<p class="intolerances-text">${text}</p><div class="intolerances-icons">`;
+        product.intolerances.forEach(type => {
+          const icon = intoleranceIcons[currentLang][type];
+          if (icon) {
+            html += `<img src="${icon}" alt="${type}">`;
+          }
+        });
+        html += `</div>`;
         intolerancesDiv.innerHTML = html;
       }
-
 
     } else {
       document.body.innerHTML = "<p style='text-align:center;'>No se encontró el producto.</p>";
     }
   </script>
+
   <script src="./js/lang.js"></script>
-
 </body>
-
 </html>
