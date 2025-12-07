@@ -17,6 +17,9 @@
 <body>
   <header>
     <div class="container header-content">
+
+      
+
       <img src="./assets/images/logo.png" alt="Logo Au Four Enchanté" class="logo">
       <nav>
         <ul class="nav-list">
@@ -27,10 +30,10 @@
       </nav>
       <div class="language-switcher">
         <select onchange="changeLanguage(this.value)">
-  <option value="es">Español</option>
-  <option value="en">English</option>
-  <option value="fr">Français</option>
-</select>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
       </div>
       <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram-header">Instagram</a>
     </div>
@@ -103,6 +106,20 @@
       <p class="location" data-i18n="footer.location">Ubicados en Valencia, España</p>
     </div>
   </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("menu-toggle");
+      const navList = document.querySelector(".nav-list");
+
+      if (toggle && navList) {
+        toggle.addEventListener("click", () => {
+          navList.classList.toggle("show");
+        });
+      }
+    });
+  </script>
 
   <script src="js/main.js"></script>
   <script src="js/lang.js"></script>

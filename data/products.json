@@ -21,8 +21,15 @@
         "ingredients": ["Farine","Semoule","Sel","Sucre","Levure fraîche","Lait","Eau","Huile d'olive","Mozzarella fior di latte","Sauce tomate","Jambon cuit"],
         "recipe": "Directement des Pouilles à Valence, pâte faite maison. Farcis de mozzarella fior di latte, sauce tomate et jambon cuit. Frits ou cuits au four — selon vos goûts."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten y lácteos",
+      "en": "Contains gluten and dairy",
+      "fr": "Contient du gluten et des produits laitiers"
+    },
+    "icons": ["assets/images/2.png", "assets/images/6.png"]
   },
+
   {
     "id": 2,
     "image": "assets/images/sanguche.jpg",
@@ -45,8 +52,15 @@
         "ingredients": ["Farine","Eau","Levure fraîche","Sucre","Lait en poudre","Sel","Beurre"],
         "recipe": "Un incontournable argentin, préparé avec du pain maison et de la charcuterie de qualité. Moelleux, frais — idéal pour goûters, petits déjeuners ou événements."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten, sulfitos y lácteos",
+      "en": "Contains gluten, sulfites and dairy",
+      "fr": "Contient du gluten, des sulfites et des produits laitiers"
+    },
+    "icons": ["assets/images/2.png", "assets/images/3.png", "assets/images/6.png"]
   },
+
   {
     "id": 3,
     "image": "assets/images/medialunas.jpg",
@@ -64,13 +78,20 @@
         "recipe": "Argentinian classic enjoyed any time of day. Handmade with 3‑day fermentation, brushed with syrup and crafted with quality butter."
       },
       "fr": {
-        "name": "Croissants Argentines",
+        "name": "Medialunas Argentines",
         "shortDescription": "Pâte feuilletée douce, sucrée et au beurre.",
         "ingredients": ["Farine","Beurre","Lait","Œufs","Sucre","Sel","Levure fraîche"],
         "recipe": "Classique argentin à déguster à tout moment. Fait main, 3 jours de fermentation, nappé de sirop et réalisé avec du beurre de qualité."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten, huevos y lácteos",
+      "en": "Contains gluten, eggs and dairy",
+      "fr": "Contient du gluten, des œufs et des produits laitiers"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/6.png"]
   },
+
   {
     "id": 4,
     "image": "assets/images/tarta.jpg",
@@ -89,12 +110,19 @@
       },
       "fr": {
         "name": "Tarte à la Ricotta",
-        "shortDescription": "Douceur, douceur et tradition argentine.",
+        "shortDescription": "Douceur et tradition argentine.",
         "ingredients": ["Farine","Beurre","Sucre","Œufs","Extrait de vanille","Citron","Levure chimique","Sel","Ricotta","Fromage à la crème"],
         "recipe": "Un classique argentin, fait entièrement à la main avec une pâte brisée maison. Disponible en format tartelette ou XL."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten, lácteos y huevos",
+      "en": "Contains gluten, dairy and eggs",
+      "fr": "Contient du gluten, des produits laitiers et des œufs"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/6.png"]
   },
+
   {
     "id": 5,
     "image": "assets/images/eclair.jpg",
@@ -117,8 +145,15 @@
         "ingredients": ["Eau","Beurre","Sucre","Farine","Œufs"],
         "recipe": "Classique français réalisé avec pâte choux, en forme allongée. Disponible avec plusieurs garnitures."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al lácteo, gluten y huevos",
+      "en": "Contains dairy, gluten and eggs",
+      "fr": "Contient des produits laitiers, du gluten et des œufs"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/6.png"]
   },
+
   {
     "id": 6,
     "image": "assets/images/croux.jpg",
@@ -141,8 +176,15 @@
         "ingredients": ["Eau","Beurre","Sucre","Farine","Œufs"],
         "recipe": "Classique français avec pâte choux ronde, recouverte d’un craquelin croustillant."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al lácteo, gluten y huevos",
+      "en": "Contains dairy, gluten and eggs",
+      "fr": "Contient des produits laitiers, du gluten et des œufs"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/6.png"]
   },
+
   {
     "id": 7,
     "image": "assets/images/paris-brest-mejorado.jpg",
@@ -165,8 +207,15 @@
         "ingredients": ["Eau","Beurre","Sucre","Farine","Œufs"],
         "recipe": "Classique français du XVIᵉ siècle, pâte choux en forme d’anneau et recouverte de craquelin."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al lácteo, gluten y huevos",
+      "en": "Contains dairy, gluten and eggs",
+      "fr": "Contient des produits laitiers, du gluten et des œufs"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/6.png"]
   },
+
   {
     "id": 8,
     "image": "assets/images/tartaletas.jpg",
@@ -189,8 +238,15 @@
         "ingredients": ["Lait","Fécule de maïs","Sucre","Jus de citron","Zeste de citron","Œufs","Beurre","Farine d’amandes","Farine","Sucre glace"],
         "recipe": "Dessert classique combinant une base croustillante, une crème onctueuse et une meringue italienne — l’équilibre parfait entre douceur et acidité."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten, lácteos, huevos y frutos secos",
+      "en": "Contains gluten, dairy, eggs and nuts",
+      "fr": "Contient du gluten, des produits laitiers, des œufs et des fruits secs"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/5.png", "assets/images/6.png"]
   },
+
   {
     "id": 9,
     "image": "assets/images/tartaleta2.jpg",
@@ -208,11 +264,17 @@
         "recipe": "Crispy base filled with apple compote flavored with vanilla and cinnamon. Paired with a smooth vanilla cream balancing the warm, spiced notes."
       },
       "fr": {
-        "name": "Tarte pomme & Crème vanille",
+        "name": "Crémeux Vanille",
         "shortDescription": "Aromatique, chaleureuse et délicate.",
         "ingredients": ["Œufs","Beurre","Farine d’amandes","Farine","Sucre glace","Pomme golden","Gousse de vanille","Cannelle","Crème","Chocolat blanc","Lait","Gélatine"],
         "recipe": "Base croustillante garnie de compote de pomme parfumée à la vanille et à la cannelle. Accompagnée d’une crème vanille onctueuse équilibrant les notes épicées."
       }
-    }
+    },
+    "intolerancesText": {
+      "es": "Intolerancia al gluten, huevos, frutos secos y lácteos",
+      "en": "Contains gluten, eggs, nuts and dairy",
+      "fr": "Contient du gluten, des œufs, des fruits secs et des produits laitiers"
+    },
+    "icons": ["assets/images/2.png", "assets/images/4.png", "assets/images/5.png", "assets/images/6.png"]
   }
 ]
