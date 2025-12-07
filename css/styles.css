@@ -271,6 +271,7 @@ header {
   padding: 1rem;
 }
 
+/* Los títulos de las tarjetas de producto (h3) mantienen las mayúsculas iniciales por defecto (de lang.js) */
 .product-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -296,6 +297,8 @@ header {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  /* <--- CLAVE: FUERZA MAYÚSCULAS para el título principal */
 }
 
 /* CENTRADO GENERAL DEL CONTENIDO DE LA INFO DEL PRODUCTO */
@@ -305,7 +308,7 @@ header {
 
 .product-info h3 {
   text-align: left;
-  /* Centrar solo los títulos de las secciones */
+  /* Títulos de Ingredientes/Descripción alineados a la izquierda */
   margin-bottom: 1em;
 }
 
@@ -325,7 +328,6 @@ header {
 .product-detail ul {
   margin-bottom: 1rem;
   padding-left: 1.2rem;
-  /* Restaurar padding izquierdo para las viñetas */
   list-style-position: outside;
   text-align: left;
   max-width: none;
@@ -343,7 +345,6 @@ header {
   margin-bottom: 1.5rem;
   line-height: 1.6;
   text-align: left;
-  /* Aseguramos que la descripción no esté centrada */
 }
 
 /* Botones y otros estilos de detalle... */
@@ -431,11 +432,11 @@ footer {
 
 /* INTOLERANCIAS */
 .intolerances-box {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   margin-bottom: 2rem;
 }
 
