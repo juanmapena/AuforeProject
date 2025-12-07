@@ -18,24 +18,30 @@
   <header>
     <div class="container header-content">
 
-      
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
 
       <img src="./assets/images/logo.png" alt="Logo Au Four Enchanté" class="logo">
       <nav>
         <ul class="nav-list">
-          <li><a href="#about" data-i18n="nav.about">Sobre mi</a></li>
+          <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
           <li><a href="#project" data-i18n="nav.project">El Proyecto</a></li>
           <li><a href="#products" data-i18n="nav.products">Productos</a></li>
         </ul>
       </nav>
-      <div class="language-switcher">
-        <select onchange="changeLanguage(this.value)">
-          <option value="es">Español</option>
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-        </select>
+
+      <div class="header-buttons-wrapper">
+        <div class="language-switcher">
+          <select onchange="changeLanguage(this.value)">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
       </div>
-      <a href="https://www.instagram.com/aufourenchante" target="_blank" class="btn-instagram-header">Instagram</a>
+
+
     </div>
   </header>
 
@@ -43,7 +49,7 @@
     <section id="about" class="about">
       <div class="container about-flex">
         <div class="about-text">
-          <h2 data-i18n="about.title">Sobre mi</h2>
+          <h2 data-i18n="about.title">Sobre mí</h2>
           <p data-i18n="about.p1"></p>
           <p data-i18n="about.p2"></p>
           <p data-i18n="about.p3"></p>
@@ -105,23 +111,50 @@
       <p>&copy; 2025 Au Four Enchanté. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
       <p class="location" data-i18n="footer.location">Ubicados en Valencia, España</p>
     </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/aufourenchante" target="_blank" aria-label="Instagram">
+        <img src="./assets/images/instagramMejor.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@au.four.enchant?_r=1&_t=ZN-921z5mmWrIc" target="_blank" aria-label="TikTok">
+        <img src="./assets/images/tiktokPNG.png" alt="TikTok">
+      </a>
+      <a href="https://www.facebook.com/share/1NwFG9eqfX/" target="_blank" aria-label="Facebook">
+        <img src="./assets/images/facebookPNG.png" alt="Facebook">
+      </a>
+    </div>
+
+
   </footer>
+
 
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const toggle = document.getElementById("menu-toggle");
       const navList = document.querySelector(".nav-list");
+      const navLinks = document.querySelectorAll(".nav-list a");
 
       if (toggle && navList) {
         toggle.addEventListener("click", () => {
           navList.classList.toggle("show");
         });
+
+        // Cierra el menú al hacer clic en un enlace de navegación
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (navList.classList.contains("show")) {
+              navList.classList.remove("show");
+            }
+          });
+        });
       }
     });
   </script>
 
+
   <script src="js/main.js"></script>
+
   <script src="js/lang.js"></script>
 </body>
 

@@ -23,10 +23,30 @@ function renderProducts(lang) {
   });
 }
 
-fetch("data/products.json")
-  .then(response => response.json())
-  .then(products => {
-    productsCache = products;
-    const lang = localStorage.getItem("selectedLanguage") || "es";
-    renderProducts(lang);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const navList = document.querySelector(".nav-list");
+
+  if (toggle && navList) {
+    toggle.addEventListener("click", () => {
+      navList.classList.toggle("show");
+    });
+  }
+
+  fetch("data/products.json")
+    .then(response => response.json())
+    .then(products => {
+      productsCache = products;
+      const lang = localStorage.getItem("selectedLanguage") || "es";
+      renderProducts(lang);
+    });
+});
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navList = document.querySelector(".nav-list");
+
+  if (menuToggle && navList) {
+    menuToggle.addEventListener("click", () => {
+      navList.classList.toggle("show");
+    });
+  }

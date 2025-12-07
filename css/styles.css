@@ -430,6 +430,29 @@ footer {
   color: #7c4b3b;
 }
 
+footer .social-media {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer .social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(34%) saturate(480%) hue-rotate(340deg) brightness(90%) contrast(89%);
+}
+
+footer .social-media a:hover img {
+  transform: scale(1.2);
+  filter: none; 
+}
+
+
+
+
+
 /* INTOLERANCIAS */
 .intolerances-box {
   text-align: center;
@@ -595,9 +618,6 @@ footer {
   }
 
   .logo {
-    order: 2;
-    /* Centrado */
-    flex-grow: 1;
     width: 45px;
     height: 45px;
   }
@@ -655,7 +675,6 @@ footer {
   }
 
   .logo {
-    order: 2;
     width: 40px;
     height: 40px;
   }
