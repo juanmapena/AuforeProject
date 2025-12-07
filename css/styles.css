@@ -569,8 +569,7 @@ footer .social-media a:hover img {
   }
 
   /* OCULTAMOS EL BOTÓN INSTAGRAM Y EL WRAPPER (Sólo queda el language-switcher suelto) */
-  .btn-instagram-header,
-  .header-buttons-wrapper {
+  .btn-instagram-header{
     display: none;
   }
 
