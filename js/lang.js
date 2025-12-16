@@ -9,6 +9,9 @@ const translations = {
     "about.p2": "Hoy quiero reconectar con mis orígenes y compartir lo que más disfruto desde un nuevo lugar — trayendo el aroma, la textura y el sabor de una producción artesanal donde cada producto cuenta una historia.",
     "about.p3": "Desde las clásicas medialunas argentinas, hasta postres típicos de diferentes regiones y países. Todo está hecho con tiempo, dedicación y amor por el detalle.",
     "about.p4": "Un sabor auténtico, recién horneado. Un viaje de sabores en cada bocado.",
+    "hero.headline": "Fusión Francesa y Tradición Argentina",
+    "hero.slogan": "Productos artesanales, frescos y hechos con amor en Valencia.",
+    "hero.cta": "Ver Menú Completo",
 
     "project.title": "EL PROYECTO",
     "project.step1.title": "INICIO DEL PROYECTO",
@@ -44,6 +47,10 @@ const translations = {
     "about.p2": "Today I want to reconnect with my roots and share what I enjoy the most from a new place — bringing the aroma, texture and flavor of artisanal bakery where each product tells a story.",
     "about.p3": "From classic Argentine croissants to traditional desserts from different regions and countries. Everything is made with time, dedication, and love for detail.",
     "about.p4": "An authentic flavor, freshly baked. A journey of flavors in every bite.",
+
+    "hero.headline": "French Fusion & Argentine Tradition",
+    "hero.slogan": "Handmade, fresh products crafted with love in Valencia.",
+    "hero.cta": "View Full Menu",
 
     "project.title": "THE PROJECT",
     "project.step1.title": "PROJECT START",
@@ -89,6 +96,10 @@ const translations = {
     "about.p2": "Aujourd'hui, je souhaite me reconnecter avec mes origines et partager ce que j'aime le plus — en apportant l'arôme, la texture et la saveur d'une boulangerie artisanale où chaque produit raconte une histoire.",
     "about.p3": "Des croissants argentins classiques aux desserts traditionnels de différentes régions et pays. Tout est fait avec du temps, de la dévotion et un amour pour le détail.",
     "about.p4": "Une saveur authentique, tout juste sortie du four. Un voyage gustatif à chaque bouchée.",
+
+    "hero.headline": "Fusion Française et Tradition Argentine",
+    "hero.slogan": "Produits artisanaux, frais et faits avec amour à Valence.",
+    "hero.cta": "Voir le Menu Complet",
 
     "project.title": "LE PROJET",
     "project.step1.title": "DÉBUT DU PROJET",

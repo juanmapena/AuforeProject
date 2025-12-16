@@ -15,7 +15,8 @@
 
 
   <meta property="og:title" content="Au Four Enchanté" />
-  <meta property="og:description" content="Descubre la calidez de la gastronomía argentina fusionada con la técnica francesa. Productos frescos y hechos con amor en Valencia." />
+  <meta property="og:description"
+    content="Descubre la calidez de la gastronomía argentina fusionada con la técnica francesa. Productos frescos y hechos con amor en Valencia." />
   <meta property="og:image" content="https://aufourenchante.netlify.app/assets/images/logo.png" />
   <meta property="og:url" content="https://aufourenchante.netlify.app" />
   <meta property="og:type" content="website" />
@@ -56,10 +57,17 @@
   </header>
 
   <main>
-    <section id="about" class="about">
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1 class="hero-headline reveal-section" data-i18n="hero.headline">Fusión Francesa y Tradición Argentina</h1>
+        <p class="hero-slogan" data-i18n="hero.slogan">Productos artesanales, frescos y hechos con amor en Valencia.</p>
+        <a href="#products" class="btn-cta" data-i18n="hero.cta">Ver Menú Completo</a>
+      </div>
+    </section>
+    <section id="about" class="about reveal-section">
       <div class="container about-flex">
         <div class="about-text">
-          <h2 data-i18n="about.title">Sobre mí</h2>
+          <h2 class="h2-general" data-i18n="about.title">Sobre mí</h2>
           <p data-i18n="about.p1"></p>
           <p data-i18n="about.p2"></p>
           <p data-i18n="about.p3"></p>
@@ -67,34 +75,34 @@
           <p class="signature"> Au Four Enchanté </p>
         </div>
         <div class="about-image">
-          <img src="./assets/images/cocinando.jpg" alt="Nicolás el cocinero">
+          <img src="./assets/images/cocinando.jpg" alt="Nicolás el cocinero" loading="lazy">
         </div>
       </div>
     </section>
 
-    <section id="project" class="project">
+    <section id="project" class="project reveal-section">
       <div class="container">
         <div class="project-header-wrapper">
-          <h2 data-i18n="project.title">El Proyecto</h2>
+          <h2 class="h2-general" data-i18n="project.title">El Proyecto</h2>
           <div class="timeline">
             <div class="timeline-step">
               <div class="circle">1</div>
-              <h4 data-i18n="project.step1.title"></h4>
+              <h4 class="h4-step" data-i18n="project.step1.title"></h4>
               <p data-i18n="project.step1.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">2</div>
-              <h4 data-i18n="project.step2.title"></h4>
+              <h4  class="h4-step" data-i18n="project.step2.title"></h4>
               <p data-i18n="project.step2.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">3</div>
-              <h4 data-i18n="project.step3.title"></h4>
+              <h4  class="h4-step" data-i18n="project.step3.title"></h4>
               <p data-i18n="project.step3.text"></p>
             </div>
             <div class="timeline-step">
               <div class="circle">4</div>
-              <h4 data-i18n="project.step4.title"></h4>
+              <h4  class="h4-step" data-i18n="project.step4.title"></h4>
               <p data-i18n="project.step4.text"></p>
             </div>
           </div>
@@ -108,13 +116,15 @@
       </div>
     </section>
 
-    <section id="products" class="products">
+    <section id="products" class="products reveal-section">
       <div class="container">
-        <h2 data-i18n="products.title">Nuestros Productos</h2>
+        <h2 class="h2-general" data-i18n="products.title">Nuestros Productos</h2>
         <div id="product-gallery" class="product-gallery"></div>
       </div>
     </section>
   </main>
+
+  <button id="back-to-top" class="btn-scroll-top" title="Volver arriba">↑</button>
 
   <footer>
     <div class="container">
@@ -145,6 +155,27 @@
       const navList = document.querySelector(".nav-list");
       const navLinks = document.querySelectorAll(".nav-list a");
 
+      // ***************************************************
+      // Lógica del botón Volver Arriba (Back to Top)
+      // ***************************************************
+      const backToTopButton = document.getElementById("back-to-top");
+
+      const checkScroll = () => {
+        if (window.scrollY > 300) { // Mostrar después de 300px de scroll
+          backToTopButton.classList.add("show-scroll");
+        } else {
+          backToTopButton.classList.remove("show-scroll");
+        }
+      };
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      window.addEventListener('scroll', checkScroll);
+      // ***************************************************
+
+
       if (toggle && navList) {
         toggle.addEventListener("click", () => {
           navList.classList.toggle("show");
@@ -159,6 +190,31 @@
           });
         });
       }
+
+      // ***************************************************
+      // Intersection Observer para animar las secciones
+      // ***************************************************
+      const sections = document.querySelectorAll('.reveal-section');
+
+      const observerOptions = {
+        root: null, // viewport
+        threshold: 0.1, // 10% visible
+        rootMargin: '0px'
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+      // ***************************************************
     });
   </script>
 

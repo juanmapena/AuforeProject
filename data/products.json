@@ -5,7 +5,7 @@
     "video": "assets/images/panzerotti-video.mp4", 
  "translations": {
 "es": {
-"name": "Panzerottis",
+"name": "Panzerotti",
 "shortDescription": "Clásicos de Puglia, masa casera y relleno fior di latte.",
  "ingredients": [
           "Harina",
@@ -24,7 +24,7 @@
 
       },
 "en": {
- "name": "Panzerottis",
+ "name": "Panzerotti",
  "shortDescription": "Classic from Puglia — homemade dough & fior di latte filling.",
  "ingredients": [
           "Flour",
@@ -43,7 +43,7 @@
 
       },
  "fr": {
- "name": "Panzerottis",
+ "name": "Panzerotti",
  "shortDescription": "Classique des Pouilles — pâte maison et garniture fior di latte.",
  "ingredients": [
           "Farine",
@@ -96,7 +96,7 @@
 
       },
  "en": {
- "name": "Argentinian Sanguches",
+ "name": "Argentinian Sandwiches",
 "shortDescription": "Argentinian classic — soft with handmade bread.",
  "ingredients": [
           "Flour",
@@ -356,7 +356,7 @@
           "Harina",
           "Huevos"
         ],
-"recipe": "Clásico francés de masa choux, en versión redonda y cubierto con un craquelado crujiente."
+"recipe": "Clásico francés de masa choux, en versión redonda y cubierto con un craquelado crujiente. Disponible con diferentes tipos de relleno."
 
       },
  "en": {
@@ -369,7 +369,7 @@
           "Flour",
           "Eggs"
         ],
-"recipe": "French classic choux pastry, in round form covered with a crunchy craquelin."
+"recipe": "French classic choux pastry, in round form covered with a crunchy craquelin. Available in various fillings."
 
       },
  "fr": {
@@ -382,7 +382,7 @@
           "Farine",
           "Œufs"
         ],
-"recipe": "Classique français avec pâte choux ronde, recouverte d’un craquelin croustillant."
+"recipe": "Classique français avec pâte choux ronde, recouverte d’un craquelin croustillant. Disponible avec varias garnitures."
 
       }
 
@@ -416,7 +416,7 @@
           "Harina",
           "Huevos"
         ],
- "recipe": "Clásico francés del siglo XVI, elaborado con masa choux en forma de rosca y cubierto con craquelado."
+ "recipe": "Clásico francés del siglo XVI, elaborado con masa choux en forma de rosca y cubierto con craquelado. Disponible con diferentes tipos de relleno."
 
       },
 "en": {
@@ -429,7 +429,7 @@
           "Flour",
           "Eggs"
         ],
- "recipe": "16th‑century French classic, choux pastry shaped as a ring and topped with craquelin."
+ "recipe": "16th-century French classic, choux pastry shaped as a ring and topped with craquelin. Available in various fillings."
 
       },
  "fr": {
@@ -442,7 +442,7 @@
           "Farine",
           "Œufs"
         ],
-"recipe": "Classique français du XVIᵉ siècle, pâte choux en forma d’anneau et recouverte de craquelin."
+"recipe": "Classique français du XVIᵉ siècle, pâte choux en forma d’anneau et recouverte de craquelin. Disponible avec varias garnitures."
 
       }
 
@@ -617,5 +617,89 @@
       "lacteos"
     ]
 
-  }
+  },
+{
+  "id": 10,
+  "image": "assets/images/tartaleta-goumand.jpg",
+  "video": "assets/images/video-goumand.mp4",
+  "translations": {
+    "es": {
+      "name": "Tartaleta Gourmand de Nuez",
+      "shortDescription": "Intensa, cremosa y elegante.",
+      "ingredients": [
+        "Harina",
+        "Manteca",
+        "Azúcar glas",
+        "Huevos",
+        "Sal",
+        "Polvo de almendras",
+        "Azúcar",
+        "Chocolate blanco",
+        "Gelatina en polvo",
+        "Agua",
+        "Crema",
+        "Leche",
+        "Agar-agar",
+        "Vaina de vainilla",
+        "Nuez pecana"
+      ],
+      "recipe": "Tartaleta gourmet compuesta por una base sablée crujiente, rellena con cremosos suaves de vainilla y chocolate blanco, y terminada con nuez pecana. Un postre equilibrado entre dulzura, textura y profundidad de sabor."
+    },
+    "en": {
+      "name": "Gourmet Pecan Tart",
+      "shortDescription": "Rich, creamy and elegant.",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Powdered sugar",
+        "Eggs",
+        "Salt",
+        "Almond powder",
+        "Sugar",
+        "White chocolate",
+        "Powdered gelatin",
+        "Water",
+        "Cream",
+        "Milk",
+        "Agar-agar",
+        "Vanilla bean",
+        "Pecan nuts"
+      ],
+      "recipe": "Gourmet tart made with a crisp sablée base, filled with smooth vanilla and white chocolate creams, and finished with pecan nuts. A refined dessert balancing sweetness, texture and depth of flavor."
+    },
+    "fr": {
+      "name": "Tarte Gourmande à la Noix",
+      "shortDescription": "Intense, crémeuse et élégante.",
+      "ingredients": [
+        "Farine",
+        "Beurre",
+        "Sucre glace",
+        "Œufs",
+        "Sel",
+        "Poudre d’amandes",
+        "Sucre",
+        "Chocolat blanc",
+        "Gélatine en poudre",
+        "Eau",
+        "Crème",
+        "Lait",
+        "Agar-agar",
+        "Gousse de vanille",
+        "Noix de pécan"
+      ],
+      "recipe": "Tarte gourmande composée d’une base sablée croustillante, garnie de crémeux à la vanille et au chocolat blanc, puis sublimée par des noix de pécan. Un dessert élégant et équilibré."
+    }
+  },
+  "intolerancesText": {
+    "es": "Alérgenos",
+    "en": "Allergens",
+    "fr": "Allergènes"
+  },
+  "intolerances": [
+    "gluten",
+    "huevos",
+    "lacteos",
+    "frutos_secos"
+  ]
+}
 ]
