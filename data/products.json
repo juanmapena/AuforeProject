@@ -624,7 +624,7 @@
   "video": "assets/images/video-goumand.mp4",
   "translations": {
     "es": {
-      "name": "Tartaleta Gourmand de Nuez",
+      "name": "Tartaleta Gourmet de Nuez",
       "shortDescription": "Intensa, cremosa y elegante.",
       "ingredients": [
         "Harina",
@@ -643,7 +643,7 @@
         "Vaina de vainilla",
         "Nuez pecana"
       ],
-      "recipe": "Tartaleta gourmet compuesta por una base sablée crujiente, rellena con cremosos suaves de vainilla y chocolate blanco, y terminada con nuez pecana. Un postre equilibrado entre dulzura, textura y profundidad de sabor."
+      "recipe": "Tartaleta gourmet compuesta por una base crujiente, rellana con un cremoso de nuez pecana, una ganache de vainilla y una salsa caramel beurre salée. Un postre equilibrado entre dulzura, textura y profundidad de sabor."
     },
     "en": {
       "name": "Gourmet Pecan Tart",
@@ -665,10 +665,10 @@
         "Vanilla bean",
         "Pecan nuts"
       ],
-      "recipe": "Gourmet tart made with a crisp sablée base, filled with smooth vanilla and white chocolate creams, and finished with pecan nuts. A refined dessert balancing sweetness, texture and depth of flavor."
+      "recipe": "A gourmet tartlet with a crisp crust, filled with a creamy pecan nut filling, vanilla ganache, and salted beurre caramel sauce. A dessert perfectly balanced in sweetness, texture, and depth of flavor."
     },
     "fr": {
-      "name": "Tarte Gourmande à la Noix",
+      "name": "Tarte Gourmet à la Noix",
       "shortDescription": "Intense, crémeuse et élégante.",
       "ingredients": [
         "Farine",
@@ -687,7 +687,7 @@
         "Gousse de vanille",
         "Noix de pécan"
       ],
-      "recipe": "Tarte gourmande composée d’une base sablée croustillante, garnie de crémeux à la vanille et au chocolat blanc, puis sublimée par des noix de pécan. Un dessert élégant et équilibré."
+      "recipe": "Une tartelette gourmande à la pâte croustillante, garnie d'une crème onctueuse aux noix de pécan, d'une ganache à la vanille et d'un caramel au beurre salé. Un dessert à l'équilibre parfait entre douceur, texture et saveur."
     }
   },
   "intolerancesText": {
@@ -701,5 +701,131 @@
     "lacteos",
     "frutos_secos"
   ]
-}
+},
+{
+    "id": 11,
+    "image": "assets/images/Foto factura 2.jpg",
+    "video": "assets/images/Video factura 2.mp4",
+    "translations": {
+      "es": {
+        "name": "Facturas",
+        "shortDescription": "Rellenas con pastelera, membrillo o dulce de leche.",
+        "ingredients": [
+          "Harina", "Mantequilla", "Leche", "Huevos", "Azúcar", "Sal", "Levadura fresca"
+        ],
+        "recipe": "Masa de medialunas 100% mantequilla hechas a mano, las auténticas. Con crema pastelera, dulce de leche o membrillo, como a vos te gusten."
+      },
+      "en": {
+        "name": "Facturas",
+        "shortDescription": "Filled with custard, quince or dulce de leche.",
+        "ingredients": [
+          "Flour", "Butter", "Milk", "Eggs", "Sugar", "Salt", "Fresh yeast"
+        ],
+        "recipe": "Handmade, all-butter croissant dough. Filled with custard, dulce de leche or quince paste — just the way you like them."
+      },
+      "fr": {
+        "name": "Facturas",
+        "shortDescription": "Fourrées à la crème, au coing ou au dulce de leche.",
+        "ingredients": [
+          "Farine", "Beurre", "Lait", "Œufs", "Sucre", "Sel", "Levure fraîche"
+        ],
+        "recipe": "Pâte de croissant 100% beurre faite à la main. Garnies de crème pâtissière, de dulce de leche ou de pâte de coing — selon vos goûts."
+      }
+    },
+    "intolerancesText": {
+      "es": "Alérgenos",
+      "en": "Allergens",
+      "fr": "Allergènes"
+    },
+    "intolerances": ["gluten", "huevos", "lacteos"]
+  },
+  {
+    "id": 12,
+    "image": "assets/images/tartaletalulo.jpeg",
+    "video": "assets/images/tartaletalulo.mp4",
+    "translations": {
+      "es": {
+        "name": "Tartaleta de Lulo",
+        "shortDescription": "Fresca, aromática y perfectamente equilibrada.",
+        "ingredients": [
+          "Harina",
+          "Mantequilla",
+          "Azúcar glas",
+          "Huevos",
+          "Sal",
+          "Polvo de almendras",
+          "Pulpa de lulo",
+          "Maicena",
+          "Azúcar",
+          "Yemas",
+          "Manteca",
+          "Canela",
+          "Chocolate blanco",
+          "Gelatina en polvo",
+          "Agar-agar",
+          "Crema",
+          "Leche",
+          "Agua"
+        ],
+        "recipe": "Compuesta por una base crujiente, rellena de un curd de lulo, con un cremoso de canela y un gel de lulo. Postre fresco y aromático, especiado y equilibrado perfectamente entre dulzor y acidez."
+      },
+      "en": {
+        "name": "Lulo Tart",
+        "shortDescription": "Fresh, aromatic and perfectly balanced.",
+        "ingredients": [
+          "Flour",
+          "Butter",
+          "Powdered sugar",
+          "Eggs",
+          "Salt",
+          "Almond powder",
+          "Lulo pulp",
+          "Cornstarch",
+          "Sugar",
+          "Egg yolks",
+          "Butter",
+          "Cinnamon",
+          "White chocolate",
+          "Powdered gelatin",
+          "Agar-agar",
+          "Cream",
+          "Milk",
+          "Water"
+        ],
+        "recipe": "Crunchy base filled with lulo curd, cinnamon cream and lulo gel. A fresh and aromatic dessert, perfectly balanced between sweetness and acidity."
+      },
+      "fr": {
+        "name": "Tarte au Lulo",
+        "shortDescription": "Fraîche, aromatique et parfaitement équilibrée.",
+        "ingredients": [
+          "Farine",
+          "Beurre",
+          "Sucre glace",
+          "Œufs",
+          "Sel",
+          "Poudre d’amandes",
+          "Pulpe de lulo",
+          "Fécule de maïs",
+          "Sucre",
+          "Jaunes d’œufs",
+          "Beurre",
+          "Cannelle",
+          "Chocolat blanc",
+          "Gélatine en poudre",
+          "Agar-agar",
+          "Crème",
+          "Lait",
+          "Eau"
+        ],
+        "recipe": "Base croustillante garnie d’un curd au lulo, d’un crémeux à la cannelle et d’un gel au lulo. Dessert frais et aromatique, parfaitement équilibré entre douceur et acidité."
+      }
+    },
+    "intolerancesText": {
+      "es": "Alérgenos",
+      "en": "Allergens",
+      "fr": "Allergènes"
+    },
+    "intolerances": ["gluten", "huevos", "lacteos", "frutos_secos"]
+  }
 ]
+

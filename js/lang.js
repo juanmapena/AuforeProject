@@ -2,6 +2,7 @@ const translations = {
   es: {
     "nav.about": "Sobre mí", // Restaurado a minúscula
     "nav.project": "El Proyecto", // Restaurado a minúscula
+    "nav.shop": "Tienda",
     "nav.products": "Productos", // Restaurado a minúscula
 
     "about.title": "SOBRE MÍ",
@@ -9,7 +10,7 @@ const translations = {
     "about.p2": "Hoy quiero reconectar con mis orígenes y compartir lo que más disfruto desde un nuevo lugar — trayendo el aroma, la textura y el sabor de una producción artesanal donde cada producto cuenta una historia.",
     "about.p3": "Desde las clásicas medialunas argentinas, hasta postres típicos de diferentes regiones y países. Todo está hecho con tiempo, dedicación y amor por el detalle.",
     "about.p4": "Un sabor auténtico, recién horneado. Un viaje de sabores en cada bocado.",
-    "hero.headline": "Fusión Francesa y Tradición Argentina",
+    "hero.headline": "Técnica Francesa y Tradición Argentina",
     "hero.slogan": "Productos artesanales, frescos y hechos con amor en Valencia.",
     "hero.cta": "Ver Menú Completo",
 
@@ -41,6 +42,7 @@ const translations = {
     "nav.about": "About Me", // Restaurado a minúscula
     "nav.project": "The Project", // Restaurado a minúscula
     "nav.products": "Products", // Restaurado a minúscula
+    "nav.shop": "Shop",
 
     "about.title": "ABOUT ME",
     "about.p1": "Hi! I'm Nicolás, an Argentine professional cook by vocation. Studying in France taught me that gastronomy is much more than technique: it's history, culture, and above all, passion.",
@@ -48,7 +50,7 @@ const translations = {
     "about.p3": "From classic Argentine croissants to traditional desserts from different regions and countries. Everything is made with time, dedication, and love for detail.",
     "about.p4": "An authentic flavor, freshly baked. A journey of flavors in every bite.",
 
-    "hero.headline": "French Fusion & Argentine Tradition",
+    "hero.headline": "French Technique & Argentine Tradition",
     "hero.slogan": "Handmade, fresh products crafted with love in Valencia.",
     "hero.cta": "View Full Menu",
 
@@ -90,6 +92,7 @@ const translations = {
     "nav.about": "À propos de moi", // Restaurado a minúscula
     "nav.project": "Le Projet", // Restaurado a minúscula
     "nav.products": "Produits", // Restaurado a minúscula
+    "nav.shop": "Boutique",   
 
     "about.title": "À PROPOS DE MOI",
     "about.p1": "Salut ! Je suis Nicolás, argentin et cuisinier professionnel par vocation. Étudier en France m'a appris que la gastronomie est plus que de la technique : c'est de l'histoire, de la culture et surtout, de la passion.",
@@ -97,7 +100,7 @@ const translations = {
     "about.p3": "Des croissants argentins classiques aux desserts traditionnels de différentes régions et pays. Tout est fait avec du temps, de la dévotion et un amour pour le détail.",
     "about.p4": "Une saveur authentique, tout juste sortie du four. Un voyage gustatif à chaque bouchée.",
 
-    "hero.headline": "Fusion Française et Tradition Argentine",
+    "hero.headline": "Technique Française et Tradition Argentine",
     "hero.slogan": "Produits artisanaux, frais et faits avec amour à Valence.",
     "hero.cta": "Voir le Menu Complet",
 

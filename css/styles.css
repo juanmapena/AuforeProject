@@ -300,10 +300,7 @@ header {
   padding-bottom: 1rem;
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 100%;
-
-  /* Línea de conexión del Timeline */
-  position: relative;
+  max-width: 100%; 
 }
 
 .timeline::before {
