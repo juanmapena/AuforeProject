@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 /*ANIMACIONES DE REVELADO (FADE-IN-UP) */
 @keyframes fadeInUp {
   from {
@@ -166,13 +168,12 @@ header {
 
 .hero-headline {
   font-family: 'Tan Songbird', serif;
-  font-size: 3.8rem;
-  /* Ligeramente más pequeño para evitar superposición */
-  line-height: 1.9;
-  /* CRUCIAL: Aumentar el interlineado para evitar que las letras se toquen */
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
   text-transform: uppercase;
 }
+
+
+
 
 .hero-slogan {
   font-size: 1.2rem;
@@ -866,14 +867,13 @@ footer .social-media a:hover img {
         padding: 5rem 0 4rem; /* Reducimos el padding general */
     }
 
-    .hero-headline {
-        font-size: 3rem; /* Reducimos el tamaño para tabletas */
-        line-height: 1.6; 
-    }
+   
 
 
 
 }
+
+
 
 /* RESPONSIVE: MEDIA QUERY para pantallas MÓVILES PEQUEÑAS (hasta 480px) */
 @media (max-width: 480px) {
@@ -939,15 +939,41 @@ footer .social-media a:hover img {
   .product-detail h1 {
     font-size: 1.8rem;
   }
+
+  .product-gallery {
+    grid-template-columns: 1fr;
+  }
 }
+
+/* ABOUT IMAGE FIX */
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* BUTTON SIZE FIX */
+.btn-instagram,
+.btn-back {
+  min-width: 120px;
+  padding: 0.75rem 1.2rem;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+
+@media (max-width: 425px) {
+
+  .hero-slogan{
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+}
+
 
 /* RESPONSIVE: MEDIA QUERY para pantallas MÓVILES EXTREMADAMENTE ESTRECHAS (<= 360px) */
 @media (max-width: 360px) {
 
-  .hero-headline {
-        font-size: 1.6rem; /* Reducción máxima del tamaño de fuente */
-        line-height: 1.6;
-    }
+
 
   /* Ajuste para el título del producto */
   .product-detail h1 {
