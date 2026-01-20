@@ -115,8 +115,8 @@ const translations = {
     "project.step4.text": "Croissants, desserts et expériences riches en saveurs.",
 
     "project.summary": "Au Four Enchanté est né du désir d'unir le meilleur de deux mondes : la chaleur et la saveur de la gastronomie argentine avec la technique, le détail et l'élégance de la tradition française.",
-    "project.p1": "C’est un projet artisanal qui cherche à offrir plus que des productos : il souhaite partager une expérience. Chaque création est réalisée avec soin, en utilisant des ingrédients de qualité y procesos respetuosos du temps.",
-    "project.p2": "Plus qu'une boulangerie ou une pâtisserie, c'est un espace donde la passion devient arôme, textura y sabor. Chaque producto tiene una historia, una inspiración y una intención : émouvoir celui qui le goûte.",
+    "project.p1": "C’est un projet artisanal qui cherche à offrir plus que des produits : il souhaite partager une expérience. Chaque création est réalisée avec soin, en utilisant des ingrédients de qualité et des processus respectueux du temps.",
+    "project.p2": "Plus qu'une boulangerie ou une pâtisserie, c'est un espace où la passion devient arôme, texture et saveur. Chaque produit a une histoire, une inspiration et une intention : émouvoir celui qui le goûte.",
 
     "products.title": "NOS PRODUITS",
     "product.ingredients": "INGRÉDIENTS",
